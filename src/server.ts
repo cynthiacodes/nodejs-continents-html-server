@@ -19,12 +19,17 @@ app.get("/asia", (req, res) => {
 });
 
 app.get("/oceania", (req, res) => {
-  const pathToFile = filePath("/pages/south-america.html");
+  const pathToFile = filePath("/pages/oceania.html");
   res.sendFile(pathToFile);
 });
 
 app.get("/south-america", (req, res) => {
-  const pathToFile = filePath("/pages/index.html");
+  const pathToFile = filePath("/pages/south-america.html");
+  res.sendFile(pathToFile);
+});
+
+app.get("/europe", (req, res) => {
+  const pathToFile = filePath("/pages/europe.html");
   res.sendFile(pathToFile);
 });
 
